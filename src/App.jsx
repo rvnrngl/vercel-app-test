@@ -8,6 +8,7 @@ import { Home } from "./pages/Home";
 import { User } from "./pages/User";
 import { Navbar } from "./Navbar";
 import { Preview } from "./pages/Preview";
+import { Settings } from "./pages/Settings";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route path="/preview" element={<Preview />}>
               Preview
+            </Route>
+            <Route path="/settings" element={<Settings />}>
+              Settings
             </Route>
             <Route path="/user" element={<User />}>
               User
