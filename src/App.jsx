@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { User } from "./pages/User";
 import { Navbar } from "./Navbar";
+import { Preview } from "./pages/Preview";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,6 +40,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}>
               Home
+            </Route>
+            <Route path="/preview" element={<Preview />}>
+              Preview
             </Route>
             <Route path="/user" element={<User />}>
               User
